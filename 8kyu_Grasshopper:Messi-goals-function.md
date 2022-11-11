@@ -14,3 +14,11 @@ For example:
 ```
 5, 10, 2  -->  17
 ```
+
+
+### Solution:
+```
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+```
