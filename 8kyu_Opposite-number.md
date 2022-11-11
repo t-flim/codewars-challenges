@@ -11,7 +11,7 @@ Examples:
 
 
 ### Solution:
-```
+```javascript
 function opposite(number) {
   return -(number)
 }

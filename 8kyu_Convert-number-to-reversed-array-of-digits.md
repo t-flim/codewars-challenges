@@ -10,7 +10,7 @@ Given a random non-negative number, you have to return the digits of this number
 
 
 ### Solution:
-```
+```javascript
 function digitize(n) {
   return (Array.from(String(n), Number)).reverse()
 }

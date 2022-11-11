@@ -8,7 +8,7 @@ Assume the test input string is always a valid string. For example, the test inp
 
 ### Solution:
 
-```
+```javascript
 function getAge(inputString){
   return +(inputString[0])
 }
