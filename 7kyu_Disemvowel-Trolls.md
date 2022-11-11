@@ -10,10 +10,9 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 Note: for this kata y isn't considered a vowel.
 
 
-
 ### Solution:
 ```
 function disemvowel(str) {
-  return str.replace(/[aeiouAEIOU]/g, "");
+  return str.replace(/[aeiou]/gi, "");
 }
 ```
