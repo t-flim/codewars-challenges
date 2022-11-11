@@ -8,3 +8,11 @@ Examples:
 14: -14
 -34: 34
 ```
+
+
+### Solution:
+```
+function opposite(number) {
+  return -(number)
+}
+```
