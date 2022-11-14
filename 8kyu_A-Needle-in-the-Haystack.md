@@ -11,3 +11,11 @@ After your function finds the needle it should return a message (as a string) th
 ```
 ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
 ```
+
+
+### Solution:
+```javascript
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.indexOf("needle")}`
+}
+```
