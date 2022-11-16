@@ -28,3 +28,16 @@ In this simple Kata your task is to create a function that turns a string into a
 ```
 wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 ```
+
+<br />
+
+### Solution:
+```javascript
+function wave(str){
+  let results = []
+  for (let i=0; i<str.length; i++) {
+    (str[i].match(/[a-z]/)) && results.push(str.slice(0,i) + str[i].toUpperCase() + str.slice(i+1))
+  }
+  return results
+}
+```
