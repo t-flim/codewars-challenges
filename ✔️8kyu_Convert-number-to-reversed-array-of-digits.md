@@ -1,6 +1,8 @@
 ## Task:
 Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
 
+<br />
+
 **Example(Input => Output)**:
 
 ```
@@ -8,6 +10,7 @@ Given a random non-negative number, you have to return the digits of this number
 0 => [0]
 ```
 
+<br />
 
 ### Solution:
 ```javascript

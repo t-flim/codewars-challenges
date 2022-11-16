@@ -3,6 +3,7 @@ Clock shows `h` hours, `m` minutes and `s` seconds after midnight.
 
 Your task is to write a function which returns the time since midnight in milliseconds.
 
+<br />
 
 **Example**:
 ```
@@ -19,6 +20,7 @@ Input constraints:
 - `0 <= m <= 59`
 - `0 <= s <= 59`
 
+<br />
 
 ### Solution:
 ```javascript

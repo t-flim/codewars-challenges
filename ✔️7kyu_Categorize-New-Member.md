@@ -18,7 +18,7 @@ output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 ```
 <br />
 
-## Solution:
+### Solution:
 ```javascript
 function openOrSenior(data){
   return data.map(([age, handicap]) => ((age >= 55) && (handicap > 7)) ? "Senior" : "Open")
