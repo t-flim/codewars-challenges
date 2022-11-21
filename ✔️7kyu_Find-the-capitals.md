@@ -5,3 +5,12 @@ Write a function that takes a single string (`word`) as argument. The function m
 ```javascript
 Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 ```
+
+<br />
+
+### Solution:
+```javascript
+var capitals = function (word) {
+  return [...word].map((item, index) => item===item.toUpperCase() ? index : null).filter(i => i !== null)
+};
+```
