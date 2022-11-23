@@ -9,3 +9,13 @@ If the function is passed a valid PIN string, return `true`, else return `false`
 "12345"  -->  false
 "a234"   -->  false
 ```
+
+<br />
+
+### Solution
+```js
+function validatePIN (pin) {
+  const re = /^(\d{4}|\d{6})$/
+  return re.test(pin)
+}
+```
