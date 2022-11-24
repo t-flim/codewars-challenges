@@ -8,3 +8,12 @@ Complete the function to return `true` if the two arguments given are anagrams o
 **Examples**
 - `"foefet"` is an anagram of `"toffee"`
 - `"Buckethead"` is an anagram of `"DeathCubeK"`
+
+<br />
+
+### Solution:
+```javascript
+var isAnagram = function(test, original) {
+  return [...test.toLowerCase()].sort().join('') === [...original.toLowerCase()].sort().join('');
+};
+```
