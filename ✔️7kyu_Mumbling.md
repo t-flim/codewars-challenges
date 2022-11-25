@@ -11,3 +11,12 @@ accum("cwAt") -> "C-Ww-Aaa-Tttt"
 ```
 
 The parameter of accum is a string which includes only letters from `a..z` and `A..Z`.
+
+<br />
+
+### Solution:
+```javascript
+function accum(s) {
+	return [...s].map((item,index)=> item.toUpperCase() + (item.repeat(index)).toLowerCase()).join('-');
+}
+```
