@@ -10,3 +10,16 @@ rgb(255, 255, 300) // returns FFFFFF
 rgb(0,0,0) // returns 000000
 rgb(148, 0, 211) // returns 9400D3
 ```
+
+<br />
+
+### Solution:
+```javascript
+function rgb(r, g, b){
+  const compToHex = (c) => {
+    const hex = (c > 255 ? 255 : c < 0 ? 0 : c).toString(16)
+    return hex.length === 1 ? "0" + hex : hex
+  }
+  return (compToHex(r) + compToHex(g) + compToHex(b)).toUpperCase()
+}
+```
