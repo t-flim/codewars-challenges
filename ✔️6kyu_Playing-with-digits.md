@@ -29,3 +29,13 @@ digPow(695, 2) should return 2 since 6^2 + 9^3 + 5^4 = 1390 = 695 * 2
 
 digPow(46288, 3) should return 51 since 4^3 + 6^4 + 2^5 + 8^6 + 8^7 = 2360688 = 46288 * 51
 ```
+
+<br />
+
+### Solution:
+```js
+function digPow(n, p) {
+    const result = n.toString().split("").map((i, id) => i**(id+p)).reduce((sum, num) => sum + num, 0)
+    return (result % n === 0) ? result/n : -1
+}
+```
